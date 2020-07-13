@@ -18,10 +18,6 @@
         android:layout_marginRight="24dp"
         android:layout_marginLeft="24dp"/>
 
-    <ImageView
-        android:layout_width="217dp"
-        android:layout_height="130dp"
-        android:src="@drawable/undraw_bookshelves_xekd" />
 
     <TextView
         android:layout_width="match_parent"
@@ -34,7 +30,7 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="426dp"
+        android:layout_height="549dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="5dp"
         android:layout_marginRight="16dp">
@@ -51,10 +47,51 @@
                 android:layout_width="match_parent"
                 android:layout_height="73dp"
                 android:layout_marginTop="10dp"
-                app:labelText="Nama Lengkap">
+                app:labelText="UserName">
 
                 <studio.carbonylgroup.textfieldboxes.ExtendedEditText
                     android:id="@+id/edtUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+
+            <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:layout_marginTop="10dp"
+                app:labelText="Nama Lengkap">
+
+                <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                    android:id="@+id/edtNamaLengkap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+            <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:layout_marginTop="10dp"
+                app:labelText="Email">
+
+                <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                    android:id="@+id/edtEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+
+            <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:layout_marginTop="10dp"
+                app:labelText="No Telepon">
+
+                <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                    android:id="@+id/edtNomorTelp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
@@ -73,37 +110,10 @@
 
             </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
 
-
-            <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
-                android:layout_width="match_parent"
-                android:layout_height="73dp"
-                android:layout_marginTop="10dp"
-                app:labelText="Email Aktif">
-
-                <studio.carbonylgroup.textfieldboxes.ExtendedEditText
-                    android:id="@+id/edtEmail"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-            </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
-
-            <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
-                android:layout_width="match_parent"
-                android:layout_height="73dp"
-                android:layout_marginTop="10dp"
-                app:labelText="Asal Sekolah">
-
-                <studio.carbonylgroup.textfieldboxes.ExtendedEditText
-                    android:id="@+id/edtSekolah"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-            </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
-
             <com.ornach.nobobutton.NoboButton
                 android:id="@+id/btnDaftar"
                 android:layout_width="match_parent"
-                android:layout_height="56dp"
+                android:layout_height="72dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="20dp"
                 android:padding="10dp"
@@ -112,8 +122,16 @@
                 app:nb_borderWidth="2dp"
                 app:nb_focusColor="#B83CC3"
                 app:nb_radius="5dp"
-                app:nb_text="Daftar Sekarang!"
+                app:nb_text="Registrasi"
                 app:nb_textColor="#FFF" />
+
+            <Button
+                android:id="@+id/btnBackLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="Sudah Punya Akun ? Daftar Disini"
+                android:textAllCaps="false" />
 
 
         </LinearLayout>

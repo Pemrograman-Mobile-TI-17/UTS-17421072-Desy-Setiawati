@@ -75,6 +75,7 @@
                 android:padding="10dp"
                 android:layout_marginBottom="20dp"
                 app:nb_text="Login"
+                android:id="@+id/LoginBtn"
                 app:nb_borderColor="#FFFFFF"
                 app:nb_borderWidth="2dp"
                 app:nb_backgroundColor="@color/colorPrimary"
